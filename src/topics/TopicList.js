@@ -1,15 +1,8 @@
 import React,  { PureComponent } from 'react'
-import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import '../styles/main.css'
 
 class TopicList extends PureComponent {
-	static propTypes = {
-		topics: PropTypes.arrayOf(PropTypes.shape({
-			topic: PropTypes.string.isRequired,
-			count: PropTypes.number.isRequired
-		}))
-	}
 
 	renderTopic(obj, index) {
 		return (
