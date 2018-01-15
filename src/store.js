@@ -5,6 +5,7 @@ import reducers from './reducers'
 const reducer = combineReducers(reducers)
 
 const socket = io.connect('http://localhost:3002')
+
 socket.on('action', payload => store.dispatch(payload))
 
 const devTools = window.devToolsExtension ? window.devToolsExtension() : (f) => f
