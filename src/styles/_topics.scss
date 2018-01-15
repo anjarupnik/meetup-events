@@ -6,4 +6,9 @@
   align-items: center;
   max-width: 300px;
 
+  li {
+    font-family: $text-font;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
 }

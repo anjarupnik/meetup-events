@@ -1,11 +1,13 @@
 @import 'placeholders';
+@import 'fonts';
 
 .rsvpContainer {
   @extend %flex-column;
+  background-color: rgba(169, 184, 209, 0.5);
 
   h1 {
     align-self: center;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
 }
 
@@ -14,10 +16,30 @@
   flex: 1;
   flex-wrap: wrap;
   max-width: 900px;
+  justify-content: space-around;
 }
 
 .rsvpItem {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   margin: 20px;
-  width: calc(100%/4 - 40px);
+  font-family: $text-font;
+  border: 1px solid black;
+
+  h5 {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rsvpItem {
+      min-width: calc(100%/4 - 40px);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .rsvpItem {
+    width: calc(100%/4 - 40px);
+  }
 }

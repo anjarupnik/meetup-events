@@ -4,11 +4,21 @@
 
 .app {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   h1 {
     font-family: $title-font;
     font-size: $title-size;
     text-align: center;
   }
+}
+
+img {
+  align-self: center;
+  width: 80px;
+  height: 80px;
+}
+
+a {
+  color: #0a1d3d;
 }
