@@ -16,7 +16,7 @@ class RsvpList extends PureComponent {
         </header>
 
         <main>
-          { this.props.rsvps.map(rsvp => <RsvpItem rsvp={rsvp} key={rsvp.rsvp_id} />) }
+          { this.props.rsvps.map((rsvp, index) => <RsvpItem rsvp={rsvp} key={index} />) }
         </main>
       </div>
     )

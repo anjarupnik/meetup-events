@@ -10,9 +10,9 @@ class TopicList extends PureComponent {
 		}))
 	}
 
-	renderTopic(obj) {
+	renderTopic(obj, index) {
 		return (
-			<li>{ obj.name } ({ obj.count })</li>
+			<li key={index}>{ obj.name } ({ obj.count })</li>
 		)
 	}
 
@@ -22,7 +22,7 @@ class TopicList extends PureComponent {
 			<div style={{width:300}}>
 				<h3>Topics top 10</h3>
 				<ol>
-					{ topics.map(this.renderTopic) }
+					{ topics.map((obj, index) => this.renderTopic(obj, index)) }
 				</ol>
 			</div>
 		)
