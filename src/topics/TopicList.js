@@ -1,6 +1,7 @@
 import React,  { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import '../styles/main.css'
 
 class TopicList extends PureComponent {
 	static propTypes = {
@@ -19,7 +20,7 @@ class TopicList extends PureComponent {
 	render() {
 		const {topics} = this.props
 		return (
-			<div style={{width:300}}>
+			<div className="topicsContainer">
 				<h3>Topics top 10</h3>
 				<ol>
 					{ topics.map((obj, index) => this.renderTopic(obj, index)) }

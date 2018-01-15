@@ -11,7 +11,7 @@ class RsvpList  extends PureComponent {
       return (
         <div>
           <img src={ rsvp.member.photo } />
-          { rsvp.event.event_name }
+          <a href={rsvp.event.event_url} target="_blank">{ rsvp.event.event_name }</a>
           { rsvp.member.member_name }
         </div>
       )
