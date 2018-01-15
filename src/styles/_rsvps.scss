@@ -5,5 +5,19 @@
 
   h1 {
     align-self: center;
+    margin-bottom: 80px;
   }
+}
+
+.rsvpList {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.rsvpItem {
+  padding: 20px;
+  margin: 20px;
+  width: calc(100%/4 - 40px);
 }

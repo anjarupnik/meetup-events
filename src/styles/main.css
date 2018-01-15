@@ -1,7 +1,8 @@
 .topicsContainer, .rsvpContainer {
   display: flex;
   flex-direction: column;
-  margin-top: 10px; }
+  margin-top: 10px;
+  flex-wrap: wrap; }
 
 .topicsContainer {
   align-items: center;
@@ -10,10 +11,23 @@
 .topicsContainer, .rsvpContainer {
   display: flex;
   flex-direction: column;
-  margin-top: 10px; }
+  margin-top: 10px;
+  flex-wrap: wrap; }
 
 .rsvpContainer h1 {
-  align-self: center; }
+  align-self: center;
+  margin-bottom: 80px; }
+
+.rsvpList {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  max-width: 900px; }
+
+.rsvpItem {
+  padding: 20px;
+  margin: 20px;
+  width: calc(100%/4 - 40px); }
 
 .app {
   display: flex;

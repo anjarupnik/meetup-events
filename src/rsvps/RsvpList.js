@@ -12,7 +12,9 @@ class RsvpList extends PureComponent {
       return (
       <div className="rsvpContainer">
           <h1>RSVP List </h1>
+          <div className="rsvpList">
           { this.props.rsvps.map((rsvp, index) => <RsvpItem rsvp={rsvp} key={index} />) }
+          </div>
       </div>
     )
   }

@@ -9,7 +9,7 @@ class RsvpList  extends PureComponent {
     render() {
       const { rsvp } = this.props
       return (
-        <div>
+        <div className="rsvpItem">
           <img src={ rsvp.member.photo } alt="member"/>
           <a href={rsvp.event.event_url} target="_blank">{ rsvp.event.event_name }</a>
           { rsvp.member.member_name }
