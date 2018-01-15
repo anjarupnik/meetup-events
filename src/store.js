@@ -2,8 +2,8 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
 import ReduxThunk from 'redux-thunk'
 import io from 'socket.io-client'
 import reducers from './reducers'
-const reducer = combineReducers(reducers)
 
+const reducer = combineReducers(reducers)
 const socket = io.connect('http://localhost:3002')
 
 socket.on('action', payload => store.dispatch(payload))

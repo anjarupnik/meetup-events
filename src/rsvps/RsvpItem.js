@@ -10,9 +10,9 @@ class RsvpList  extends PureComponent {
       const { rsvp } = this.props
       return (
         <div>
+          <img src={ rsvp.member.photo } />
           { rsvp.event.event_name }
           { rsvp.member.member_name }
-          { rsvp.member.photo }
         </div>
       )
     }
