@@ -1,0 +1,9 @@
+@import 'placeholders';
+
+.rsvpContainer {
+  @extend %flex-column;
+
+  h1 {
+    align-self: center;
+  }
+}

@@ -1,2 +1,24 @@
+.topicsContainer, .rsvpContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px; }
+
+.topicsContainer {
+  align-items: center;
+  max-width: 300px; }
+
+.topicsContainer, .rsvpContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px; }
+
+.rsvpContainer h1 {
+  align-self: center; }
+
 .app {
-  display: flex; }
+  display: flex;
+  justify-content: space-around; }
+  .app h1 {
+    font-family: "Sedgwick Ave Display", cursive;
+    font-size: 60px;
+    text-align: center; }

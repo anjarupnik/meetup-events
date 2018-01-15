@@ -14,7 +14,7 @@ class TopicList extends PureComponent {
 		const {topics} = this.props
 		return (
 			<div className="topicsContainer">
-				<h3>Topics top 10</h3>
+				<h1>Topics top 10</h1>
 				<ol>
 					{ topics.map((obj, index) => this.renderTopic(obj, index)) }
 				</ol>
