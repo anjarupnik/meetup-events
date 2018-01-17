@@ -3,7 +3,7 @@
 
 .rsvpContainer {
   @extend %flex-column;
-  background-color: rgba(169, 184, 209, 0.5);
+  margin-left: 20px;
 
   h1 {
     align-self: center;
@@ -25,7 +25,9 @@
   padding: 20px;
   margin: 20px;
   font-family: $text-font;
-  border: 1px solid black;
+  border: 1px solid #333333;
+  box-shadow: 4px 8px #333333;
+  border-radius: 20px;
 
   h5 {
     align-self: center;

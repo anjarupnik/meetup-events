@@ -4,7 +4,10 @@
 .topicsContainer {
   @extend %flex-column;
   align-items: center;
-  max-width: 300px;
+  max-width: 400px;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: #333333;
 
   li {
     font-family: $text-font;

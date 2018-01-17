@@ -4,12 +4,14 @@
 
 .app {
   display: flex;
-  justify-content: space-between;
+  background-color: black;
+  color: #ffffff;
 
   h1 {
     font-family: $title-font;
     font-size: $title-size;
     text-align: center;
+    color: #ffffff;
   }
 }
 
@@ -20,5 +22,6 @@ img {
 }
 
 a {
-  color: #0a1d3d;
+  color: #ffffff;
+  text-decoration: none;
 }

@@ -1,12 +1,14 @@
 .topicsContainer, .rsvpContainer {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
   flex-wrap: wrap; }
 
 .topicsContainer {
   align-items: center;
-  max-width: 300px; }
+  max-width: 400px;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: #333333; }
   .topicsContainer li {
     font-family: "Source Sans Pro", sans-serif;
     margin-bottom: 10px;
@@ -15,11 +17,10 @@
 .topicsContainer, .rsvpContainer {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
   flex-wrap: wrap; }
 
 .rsvpContainer {
-  background-color: rgba(169, 184, 209, 0.5); }
+  margin-left: 20px; }
   .rsvpContainer h1 {
     align-self: center;
     margin-bottom: 20px; }
@@ -37,7 +38,9 @@
   padding: 20px;
   margin: 20px;
   font-family: "Source Sans Pro", sans-serif;
-  border: 1px solid black; }
+  border: 1px solid #333333;
+  box-shadow: 4px 8px #333333;
+  border-radius: 20px; }
   .rsvpItem h5 {
     align-self: center; }
 
@@ -51,11 +54,13 @@
 
 .app {
   display: flex;
-  justify-content: space-between; }
+  background-color: black;
+  color: #ffffff; }
   .app h1 {
     font-family: "Sedgwick Ave Display", cursive;
     font-size: 60px;
-    text-align: center; }
+    text-align: center;
+    color: #ffffff; }
 
 img {
   align-self: center;
@@ -63,4 +68,5 @@ img {
   height: 80px; }
 
 a {
-  color: #0a1d3d; }
+  color: #ffffff;
+  text-decoration: none; }
