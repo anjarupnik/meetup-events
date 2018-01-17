@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import RsvpItem from './RsvpItem'
 import { connect } from 'react-redux'
+import Loader from '../components/loader'
 
 class RsvpList extends PureComponent {
   static propTypes = {
@@ -12,8 +13,9 @@ class RsvpList extends PureComponent {
       return (
       <div className="rsvpContainer">
           <h1>RSVP List </h1>
+          <Loader />
           <div className="rsvpList">
-          { this.props.rsvps.map((rsvp, index) => <RsvpItem rsvp={rsvp} key={index} />) }
+          { this.props.rsvps.length > 1 ? this.props.rsvps.map((rsvp, index) => <RsvpItem rsvp={rsvp} key={index} />) : null}
           </div>
       </div>
     )

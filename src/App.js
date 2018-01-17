@@ -10,7 +10,7 @@ class App extends PureComponent {
         <TopicList />
         <RsvpList />
       </div>
-    );
+    )
   }
 }
 
