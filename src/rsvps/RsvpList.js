@@ -1,13 +1,9 @@
 import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
 import RsvpItem from './RsvpItem'
 import { connect } from 'react-redux'
 import Loader from '../components/loader'
 
 class RsvpList extends PureComponent {
-  static propTypes = {
-    rsvps: PropTypes.arrayOf(PropTypes.object)
-  }
 
   render() {
       return (

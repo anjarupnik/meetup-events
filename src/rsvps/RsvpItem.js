@@ -1,10 +1,6 @@
 import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
 
 class RsvpList  extends PureComponent {
-  static propTypes = {
-    rsvp: PropTypes.object.isRequired,
-  }
 
     render() {
       const { rsvp } = this.props
