@@ -2,7 +2,7 @@ import React,  { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import '../styles/main.css'
 
-class TopicList extends PureComponent {
+export class TopicList extends PureComponent {
 
 	renderTopic(obj, index) {
 		return (

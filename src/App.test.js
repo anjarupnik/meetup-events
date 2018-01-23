@@ -1,23 +1,21 @@
 import Page from 'react-page-object'
 import React from 'react'
-import App from './App'
-import { configure } from 'enzyme'
+import {App} from './App'
+import TestUtils from 'react-dom/test-utils'
+import { configure, shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
+import {TopicList} from './topics/TopicList'
 
 configure({ adapter: new Adapter() })
 
 describe('AppSpec', () => {
-  let page
+  let app
 
   beforeEach(() => {
-    page = new Page(<App />)
+    app = shallow(<App />)
   })
 
-  afterEach(() => {
-    page.destroy()
-  })
-
-  it('should pass', () => {
-    expect(page.content()).toMatch("Topics top 10")
+  it('renders the app', () => {
+    expect(app.length).toBeTruthy()
   })
 })

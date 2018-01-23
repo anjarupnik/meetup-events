@@ -3,7 +3,7 @@ import RsvpList from './rsvps/RsvpList'
 import TopicList from './topics/TopicList'
 import './styles/main.css'
 
-class App extends PureComponent {
+export class App extends PureComponent {
   render() {
     return (
       <div className="app">
