@@ -11,6 +11,7 @@ module.exports = function(config) {
       'loadtest.js': ['webpack']
     },
     webpack: webpackConfig,
+    reporters: ['spec'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
