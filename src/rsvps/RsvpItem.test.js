@@ -1,6 +1,6 @@
 import React from 'react'
 import RsvpItem from './RsvpItem'
-import { configure, shallow } from 'enzyme'
+import { configure, mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
 configure({ adapter: new Adapter() })
@@ -39,11 +39,26 @@ describe('RsvpItem', () => {
     }
 
   beforeEach(() => {
-    component = shallow(<RsvpItem rsvp={rsvp}/>)
+    component = mount(<RsvpItem rsvp={rsvp}/>)
   })
 
   it('renders the component', () => {
     expect(component.length).toBeTruthy()
   })
 
+  it('contains memeber photo and name', () => {
+    expect(component.find('img').prop('src')).toEqual(rsvp.member.photo)
+    expect(component.find('h5').text()).toEqual(rsvp.member.member_name)
+  })
+
+  it("contains the event's link and opens it on click", () => {
+    const link = component.find('a')
+    const url = rsvp.event.event_url
+    spyOn(window, 'open')
+    expect(link.prop('href')).toEqual(url)
+    expect(link.text()).toEqual(rsvp.event.event_name)
+    link.simulate('click')
+    component.update()
+    expect(window.open).toHaveBeenCalledWith(url)
+  })
 })
