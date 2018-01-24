@@ -3,7 +3,7 @@ import RsvpItem from './RsvpItem'
 import { connect } from 'react-redux'
 import Loader from '../components/loader'
 
-class RsvpList extends PureComponent {
+export class RsvpList extends PureComponent {
 
   render() {
       return (
