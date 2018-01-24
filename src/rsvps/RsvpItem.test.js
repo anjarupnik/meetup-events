@@ -8,11 +8,6 @@ configure({ adapter: new Adapter() })
 describe('RsvpItem', () => {
   let component
   let rsvp = {
-    venue:
-     { venue_name: 'Bar Kaiser Franz',
-       lon: 8.525997,
-       lat: 47.379536,
-       venue_id: 24201341 },
     visibility: 'public',
     response: 'yes',
     guests: 0,
