@@ -51,14 +51,10 @@ describe('RsvpItem', () => {
     expect(component.find('h5').text()).toEqual(rsvp.member.member_name)
   })
 
-  it("contains the event's link and opens it on click", () => {
+  it("contains the event's link", () => {
     const link = component.find('a')
     const url = rsvp.event.event_url
-    spyOn(window, 'open')
     expect(link.prop('href')).toEqual(url)
     expect(link.text()).toEqual(rsvp.event.event_name)
-    link.simulate('click')
-    component.update()
-    expect(window.open).toHaveBeenCalledWith(url)
   })
 })
