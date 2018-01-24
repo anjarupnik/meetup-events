@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import {connect} from 'react-redux'
 
-class Loader extends PureComponent {
+export class Loader extends PureComponent {
   render() {
     if (this.props.rsvps.length > 1) {return null}
     return (
