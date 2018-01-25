@@ -1,7 +1,7 @@
 @import 'placeholders';
 @import 'fonts';
 
-.rsvpContainer {
+.rsvp-container {
   @extend %flex-column;
   margin-left: 20px;
 
@@ -11,7 +11,7 @@
   }
 }
 
-.rsvpList {
+.rsvp_list {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -19,7 +19,7 @@
   justify-content: space-around;
 }
 
-.rsvpItem {
+.rsvp_item {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -35,13 +35,13 @@
 }
 
 @media screen and (max-width: 480px) {
-  .rsvpItem {
+  .rsvp_item {
       min-width: calc(100%/4 - 40px);
   }
 }
 
 @media screen and (min-width: 480px) {
-  .rsvpItem {
+  .rsvp_item {
     width: calc(100%/4 - 40px);
   }
 }

@@ -1,7 +1,7 @@
 @import 'placeholders';
 @import 'fonts';
 
-.topicsContainer {
+.topics-container {
   @extend %flex-column;
   align-items: center;
   max-width: 400px;

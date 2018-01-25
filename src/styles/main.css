@@ -1,38 +1,38 @@
-.topicsContainer, .rsvpContainer {
+.topics-container, .rsvp-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
 
-.topicsContainer {
+.topics-container {
   align-items: center;
   max-width: 400px;
   padding-left: 10px;
   padding-right: 20px;
   background-color: #333333; }
-  .topicsContainer li {
+  .topics-container li {
     font-family: "Source Sans Pro", sans-serif;
     margin-bottom: 10px;
     font-size: 20px; }
 
-.topicsContainer, .rsvpContainer {
+.topics-container, .rsvp-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
 
-.rsvpContainer {
+.rsvp-container {
   margin-left: 20px; }
-  .rsvpContainer h1 {
+  .rsvp-container h1 {
     align-self: center;
     margin-bottom: 20px; }
 
-.rsvpList {
+.rsvp_list {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
   max-width: 900px;
   justify-content: space-around; }
 
-.rsvpItem {
+.rsvp_item {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -41,15 +41,15 @@
   border: 1px solid #333333;
   box-shadow: 4px 8px #333333;
   border-radius: 20px; }
-  .rsvpItem h5 {
+  .rsvp_item h5 {
     align-self: center; }
 
 @media screen and (max-width: 480px) {
-  .rsvpItem {
+  .rsvp_item {
     min-width: calc(100%/4 - 40px); } }
 
 @media screen and (min-width: 480px) {
-  .rsvpItem {
+  .rsvp_item {
     width: calc(100%/4 - 40px); } }
 
 .spinner {
